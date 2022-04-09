@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/fengivan.github.io/loginapp/static/css/main.073c9b0a.css",
+    "main.js": "/fengivan.github.io/loginapp/static/js/main.d7ce03e8.js",
+    "static/js/787.b56f082d.chunk.js": "/fengivan.github.io/loginapp/static/js/787.b56f082d.chunk.js",
+    "static/media/logo.svg": "/fengivan.github.io/loginapp/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/fengivan.github.io/loginapp/index.html",
+    "main.073c9b0a.css.map": "/fengivan.github.io/loginapp/static/css/main.073c9b0a.css.map",
+    "main.d7ce03e8.js.map": "/fengivan.github.io/loginapp/static/js/main.d7ce03e8.js.map",
+    "787.b56f082d.chunk.js.map": "/fengivan.github.io/loginapp/static/js/787.b56f082d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d7ce03e8.js"
+  ]
+}
