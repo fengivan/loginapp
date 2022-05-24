@@ -1,34 +1,30 @@
-import React from 'react';
-import './App.css';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/pages/Layout";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
+import LoginPage from "./components/pages/LoginPage";
+import NoPage from "./components/pages/NoPage";
 import Login from './components/Login';
 import Logout from './components/Logout';
-import BackgroundImage from './assets/images/background.png'
 
-
-function App() {
+export default function App() {
   return (
-    <header style={ HeaderStyle }>
-      <div className="App" >
-        <h2>Log in with Google!</h2>
-        <Login />
-        <br />
-        <Logout />
-        
-        
-      
-      </div>
-    </header>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="About" element={<About />} />
+          <Route path="Login" element={<LoginPage />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 
-export default App;
-
-const HeaderStyle = {
-  width: "100%",
-  height: "100vh",
-  background: `url(${BackgroundImage})`,
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover"
-}
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
