@@ -6,15 +6,14 @@ import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import LoginPage from "./components/pages/LoginPage";
 import NoPage from "./components/pages/NoPage";
-import Login from './components/Login';
-import Logout from './components/Logout';
-
+import HomePage from "./components/pages/HomePage";
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="HomePage" element={<HomePage />} />
           <Route path="About" element={<About />} />
           <Route path="Login" element={<LoginPage />} />
           <Route path="contact" element={<Contact />} />
